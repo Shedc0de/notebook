@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteBook</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="model">
+      <svg
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        width="56px"
+        height="56px"
+        viewBox="0 0 24 24"
+        aria-labelledby="notebookIconTitle"
+        stroke="#b48484"
+        stroke-width="1.5"
+        stroke-linecap="square"
+        stroke-linejoin="miter"
+        fill="none"
+        color="#b48484"
+      >
+        <path d="M9 8h5" />
+        <path d="M18 3v18H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12z" />
+        <path d="M5 19v-1a1 1 0 0 1 1-1h12" />
+      </svg>
+      <h3>Notebook</h3>
+    </div>
+    <div class="wrapper">
+      <div class="tools">
+        <div class="addBtn">
+          <button>
+            <svg
+              width="26px"
+              height="26px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-labelledby="addToListIconTitle"
+              stroke="#929191"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="miter"
+              color="#2329D6"
+            >
+              <path d="M6 10H18" />
+              <path d="M6 6H18" />
+              <path d="M6 14H10" />
+              <path d="M14 16H18" />
+              <path d="M16 14L16 18" />
+              <path d="M6 18H10" />
+            </svg>
+          </button>
+        </div>
+        <div class="closeBtn">
+          <button>
+            <svg
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25px"
+              height="25px"
+              viewBox="0 0 24 24"
+              aria-labelledby="exitIconTitle"
+              stroke="#929191"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="miter"
+              fill="none"
+              color="#2329D6"
+            >
+              <path d="M18 15l3-3-3-3" />
+              <path d="M11.5 12H20" />
+              <path stroke-linecap="round" d="M21 12h-1" />
+              <path d="M15 4v16H4V4z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="search">
+        <h1>NoteList</h1>
+        <div class="input">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search..."
+          /><svg
+            class="searchBtn"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            width="18px"
+            height="18px"
+            viewBox="0 0 24 24"
+            aria-labelledby="searchIconTitle"
+            stroke="#676767"
+            stroke-width="1.5"
+            stroke-linecap="square"
+            stroke-linejoin="miter"
+            fill="none"
+            color="#2329D6"
+          >
+            <title id="searchIconTitle">Search</title>
+            <path d="M14.4121122,14.4121122 L20,20" />
+            <circle cx="10" cy="10" r="6" />
+          </svg>
+        </div>
+      </div>
+      <div class="textContainer">
+        <!-- <div class="text"></div> -->
+      </div>
+    </div>
+    <div class="addNote">
+      <div class="tools">
+        <div class="saveText">
+          <button>
+            <svg
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              aria-labelledby="saveIconTitle"
+              stroke="#929191"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="miter"
+              fill="none"
+              color="#2329D6"
+            >
+              <path
+                d="M17.2928932,3.29289322 L21,7 L21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 L16.5857864,3 C16.8510029,3 17.1053568,3.10535684 17.2928932,3.29289322 Z"
+              />
+              <rect width="10" height="8" x="7" y="13" />
+              <rect width="8" height="5" x="8" y="3" />
+            </svg>
+          </button>
+        </div>
+        <div class="noteList">...</div>
+        <div class="closeText">
+          <button>
+            <svg
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25px"
+              height="25px"
+              viewBox="0 0 24 24"
+              aria-labelledby="exitIconTitle"
+              stroke="#929191"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="miter"
+              fill="none"
+              color="#2329D6"
+            >
+              <path d="M18 15l3-3-3-3" />
+              <path d="M11.5 12H20" />
+              <path stroke-linecap="round" d="M21 12h-1" />
+              <path d="M15 4v16H4V4z" />
+            </svg>
+          </button>
+        </div>
+        <div class="noteListModel">
+          <svg
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            width="18px"
+            height="18px"
+            viewBox="0 0 24 24"
+            aria-labelledby="listIconTitle"
+            stroke="#000"
+            stroke-width="1.5"
+            stroke-linecap="square"
+            stroke-linejoin="miter"
+            fill="none"
+            color="#2329D6"
+          >
+            <title id="listIconTitle" />
+            <path d="M10 7L18 7M10 12L18 12M10 17L18 17" />
+            <line x1="7" y1="7" x2="7" y2="7" />
+            <line x1="7" y1="12" x2="7" y2="12" />
+            <line x1="7" y1="17" x2="7" y2="17" />
+          </svg>
+          <h5>NoteList</h5>
+        </div>
+      </div>
+      <div class="textBox">
+        <textarea
+          name="textBox"
+          id="textBox"
+          cols="28"
+          rows="10"
+          placeholder="Take a note..."
+          autofocus
+        ></textarea>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

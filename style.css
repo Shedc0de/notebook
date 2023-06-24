@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+}
+
+.wrapper, .model, .addNote{
+    width: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: .8rem;
+    border: 1px solid #aaa;
+    display: none;
+}
+
+.addNote{
+    padding: 0%;
+    display: unset;
+    width: 250px;
+    place-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: none;
+}
+.noteListModel{
+    position: absolute;
+    display: none;
+
+}
+.active{
+    z-index: 12;
+    display: flex;
+    gap: .5rem;
+    /* position: absolute; */
+    top: 90%;
+    left: 50%;
+    background: #c9e8;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 500ms ease;
+    animation: showNoteList  400ms ease forwards;
+}
+.active:hover{
+    background: rgba(194, 133, 235, 0.533);
+}
+
+.noteListModel h5{
+    font-weight: normal;
+}
+.addNote .tools{ 
+    position: relative;
+    background: #c9e8fd;
+    width: 100%;
+    /* padding: .3rem; */
+}
+.addNote .tools .saveText{
+    flex: 60%;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.addNote .tools .saveText:hover,.noteList:hover,.addNote .tools .closeText:hover{
+    background: #b8def7;
+}
+.closeText{
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.noteList{
+    flex: 20%;
+    font-size: 30px;
+    line-height: .4;
+    color: #929191;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.textBox{
+    width: 100%;
+    height: 100%;
+    background: #dbedf9;
+}
+textarea{
+    outline: none;
+    border: none;
+    resize: none;
+    background: #dbedf9;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    /* aspect-ratio: 1/1; */
+}
+.model{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    place-items: center;
+    cursor: pointer;
+}
+
+.tools{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 22px;
+}
+
+.input{
+    width: 100%;
+    background-color: #eeeded;
+    display: flex;
+    place-items: center;
+    padding: 7px;
+    border-radius: 2px;
+}
+.search{
+    margin-top: 1rem;
+}
+input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #676767;
+}
+.input svg{
+    cursor: pointer;
+}
+
+input::placeholder{
+    color: #676767;
+}
+
+.textContainer{
+    overflow-y: scroll;
+    max-height: 400px;
+    scroll-behavior: smooth;
+}
+.text{
+    margin-top: 1rem;
+    background: #e9e2fc;
+    padding: 0.7rem;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+@keyframes showNoteList {
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
